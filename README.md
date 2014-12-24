@@ -47,7 +47,7 @@ Content here
 
 ## Copyright and license
 
-Code and Documentation of PHP-BOOTSTRAP copyright 2014-2015 PT.Harazakida. Code released under [MIT license](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/LICENSE). Document source released under [Creative Commons](#).
+Code and Documentation of PHP-BOOTSTRAP copyright 2014-2015 PT.Harazakida. Code released under [MIT license](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/LICENSE). Document source released under [Creative Commons](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/docs.licence).
 
 Code of BOOTSTRAP copyright Twitter, Inc. Code released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 
