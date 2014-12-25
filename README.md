@@ -8,6 +8,8 @@ Dilain pihak, Bootstrap adalah platform design masa kini, yang disukai karena me
 
 Disini kita tidak berencana untuk membuat sebuah CMS, namun sedang berusaha membuat kerangka rumah yang kemudian dapat menjadi sebuah inspirasi dan dapat dikembangkan agar anda dapat membangun sebuah rumah berdasar php yang seksi. Membuat bootstrap menyatu dengan proyek php kita dan berjalan mulus sehingga dapat fokus pada apa yang kita sedang kerjakan dan menghemat waktu lebih banyak.
 
+** Sebegai Catatan Bahwa proyek ini dalam tahap pembangunan. Ini mungkin masih sekedar kerangka yang belum lengkap, oleh karena itu mari bersama melanjutkan pengembangan. Saat ini kami akan mencoba membuat dasar dasar saja dan itupun masih mencuri kesempatan ditengah pekerjaan sehari- hari. Terima kasih untuk dukungan semuanya. **
+
 ## Table of contents
 
 - [Get Started](#get-gtarted)
@@ -27,23 +29,23 @@ php-bootstrap/
 ```
 ## Documentation
 
-Content here
+Dokumentasi akan dijelas disini setelah semuanya beres
 
 ## Example
 
-Content here
+Contoh contoh akan dijelas disini setelah semuanya beres
 
-## custom templates
+## Custom Templates
 
-Content here
+Informasinya akan dijelas disini setelah semuanya beres
 
 ## Contributing
 
-Content here
+Akan dijelas disini setelah semuanya beres
 
 # Credits
 
-Content here
+Akan dijelas disini setelah semuanya beres
 
 ## Copyright and license
 
