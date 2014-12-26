@@ -2,7 +2,7 @@
 
   /*  
      OPEN SOURCE PROJECTS © HARAZAKI 2014
-	 [THE PHP BOOTSTRAP_COMPONENT CLASSES]()
+	 [THE PHP BOOTSTRAP_COMPONENT CLASSES](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/CORE_/CLASS_/BOOTSTRAP_COMPONENTS.php)
 	  - Learn more about at http://getbootstrap.com/components/
 	  - Notes : It's still just a skeleton , let's continue the development of the future,
 	  - You can contribut at https://github.com/Harazaki/PHP-BOOTSTRAP
