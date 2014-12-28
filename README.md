@@ -16,7 +16,7 @@ Disini kita tidak berencana untuk membuat sebuah CMS, namun sedang berusaha memb
 
 - [Get Started](#get-gtarted)
 - [Documentation](#documentation)
-- [Custom Templates](#custom-templates)
+- [Using or Build Extetion](#Using-or-Build-Extetion)
 - [Example](#example)
 - [Contributing](#Contributing)
 - [Credits](#credits)
