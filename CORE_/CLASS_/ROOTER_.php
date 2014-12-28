@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit('FUNC_BASIC are Reqruitments');
+<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit;
 
   /* 
        * OPEN SOURCE PROJECTS © HARAZAKI 2014 
@@ -43,7 +43,7 @@ class APP_Rooter {
  
  private function current_controller(){
 	 
-	 if( !defined('D_CONTROL') ) handle_this('Content Requitments','Please define D_CONTENT on your setting\'s file');
+	 if( !defined('D_CONTROL') ) handle_this('Controller Requitments','Please define D_CONTROL on your setting\'s file');
 	 
 	 if( REQ_1 && REQ_2 && REQ_3 && REQ_4 && REQ_5 ){
 	 
@@ -92,8 +92,6 @@ class APP_Rooter {
   }
   
   private function current_content(){
-  
-    if( !defined('D_CONTENT') ) handle_this('Controller Requitments','Please define D_CONTROL on your setting\'s file');
 	 
 	 if(REQ_5){
 	 
