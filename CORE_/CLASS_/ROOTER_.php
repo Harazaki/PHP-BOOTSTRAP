@@ -3,7 +3,7 @@
   /* 
        * OPEN SOURCE PROJECTS © HARAZAKI 2014 
 	     * THE PHP BOOTSTRAP ROOT CLASSES
-	     - Learn more about at https://github.com/Harazaki/PHP-BOOTSTRAP
+	       - Learn more about at https://github.com/Harazaki/PHP-BOOTSTRAP
   */  
 
 class APP_Rooter {
