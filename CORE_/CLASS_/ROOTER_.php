@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit;
+<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit('FUNC_BASIC are Reqruitments');
 
   /* 
        * OPEN SOURCE PROJECTS © HARAZAKI 2014 
@@ -27,23 +27,25 @@ class APP_Rooter {
   
  }
 
+  // Get the Current REQUEST URI
  public function req($req) {
- 
      $url_x = explode('/',$this->path);
-  
-     if(isset($url_x[$req])){
-	   $rout = preg_replace( ( defined('FILE_REQUEST') ? FILE_REQUEST : '/[^a-zA-Z0-9_-]/'), '', $url_x[$req]);
-     }
-	 else{return false;}
+     if(isset($url_x[$req])){	 
+	   $rout = preg_replace( ( defined('FILE_REQUEST') ? FILE_REQUEST : '/[^a-zA-Z0-9_-]/'),'',$url_x[$req]);
+	   return ( (!empty($rout)) ? $rout : false );   
+     }else{return false;}
  }
-	
+
+  //Return the Controller 
  public function get_controller(){ return $this->get_controller; }
  
+  //Return the Content
  public function get_content(){ return $this->get_content; }
  
+  //Set the Controller
  private function current_controller(){
 	 
-	 if( !defined('D_CONTROL') ) handle_this('Controller Requitments','Please define D_CONTROL on your setting\'s file');
+	 if( !defined('D_CONTROL') ) handle_this('Content Requitments','Please define D_CONTENT on your setting\'s file');
 	 
 	 if( REQ_1 && REQ_2 && REQ_3 && REQ_4 && REQ_5 ){
 	 
@@ -91,7 +93,10 @@ class APP_Rooter {
   
   }
   
+   //Set the Content file's
   private function current_content(){
+  
+    if( !defined('D_CONTENT') ) handle_this('Controller Requitments','Please define D_CONTROL on your setting\'s file');
 	 
 	 if(REQ_5){
 	 
