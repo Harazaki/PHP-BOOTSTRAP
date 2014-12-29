@@ -7,4 +7,4 @@ Is the main directory of the core file for this application. By default this fol
 ```
 
   - Let all the private files to be here, like Classes, libary, function.
-  - And do not put the static in this directory environments
+  - And do not put the static in this directory environment

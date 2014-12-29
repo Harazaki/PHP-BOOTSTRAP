@@ -1,9 +1,10 @@
 <?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit;
 
  /* 
-     * OPEN SORCE PROJECTS Â© HARAZAKI 2014 
-	     @ PHP BOOOTSRAP PACKAGES [SESSION PHP CLASS](https://github.com/septyaman/SIMPLE_PHP_SESSION_CLASS)
-	   * Source https://github.com/Harazaki/PHP-BOOTSTRAP
+     * OPEN SORCE PROJECTS © HARAZAKI 2014 
+	   @ PHP BOOOTSRAP PACKAGES
+	   About: SESSION PHP CLASS
+	 * Source https://github.com/Harazaki/PHP-BOOTSTRAP
 	 
  */
  
@@ -22,17 +23,36 @@
 	      * USER AGENT DETECTION
 	 */
 	
-	function set_device(){ 
-     if( $P = $this->is_set('DEVICE') ) { $device = $P; }
-	 else { 
-	     require_once D_CLASS.'MOBILE_DETECT.php';
-		 $detect = new Mobile_Detect;
-		 $isMobile = $detect->isMobile();
-		 $isTablet = $detect->isTablet();
-		 $this->set('DEVICE', $device = ($isMobile ? ($isTablet ? 'TABLET' : 'MOBILE') : 'DESKTOP'));
+	function set_device($switch=false){
+	 
+	 if($switch){
+	 
+	    if( defined('APP_LAYOUT') ){
+		
+		    if( in_array($switch,$DICT=explode(',',APP_LAYOUT)) ) { $this->set('DEVICE',$device=$switch);}
+		    else { $device = $this->set_device(false); }	 
+		}
+		 else { $device = $this->set_device(false); }
+		
 	 }
-	  $this->device = $device;
+	 
+	 else {
+	
+         if( $P = $this->is_set('DEVICE') ) { $device = $P; }
+	 
+	     else { 
+	       require_once D_CLASS.'MOBILE_DETECT.php';
+		   $detect = new Mobile_Detect;
+		   $isMobile = $detect->isMobile();
+		   $isTablet = $detect->isTablet();
+		   $this->set('DEVICE', $device = ($isMobile ? ($isTablet ? 'TABLET' : 'MOBILE') : 'DESKTOP'));
+		 }
+	 
+	 }
+	 
+	  return $this->device = $device;
 	}
+	
 	
 	function set_lang($switch=false){ 
 	
