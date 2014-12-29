@@ -2,7 +2,7 @@
 
 `Status : Project 'PHP bootstrap' is under construction, please wait for it to finish and we will proclaim here. While we are seeking contributors in English translation. Thank you`
 
-Let's start something simple, yet magical and extraordinary. That answers all the needs of the power of programming languages ​​and creativity of the beauty of a scintillating century popular designs today.
+Let's start something simple, yet magical and extraordinary. That answers all the needs of the power of programming languages and creativity of the beauty of a scintillating century popular designs today.
 
 The main reason we believe the " elephant " as the basic building php is because he is strong and that our knowledge. You can know more about The Elephant is, how he works for you in their house that is [PHP.NET](http://php.net/).
 
@@ -10,7 +10,7 @@ On the other hand, Bootstrap is a contemporary design platform, which is preferr
 
 Here we do not plan to make a Content Management System, but was trying to make the frame of the house which then can be an inspiration to be developed so that we can build a home based php sexy. Make bootstrap fused with our php project up and running smoothly so that we can focus more on what we 're doing and save more time.
 
-#### Are you indonesian? Translate This
+##### Are you indonesian? Translate This
 `Sebagai Catatan Bahwa proyek ini masih dalam tahap pembangunan. Ini mungkin masih sekedar kerangka yang belum lengkap, oleh karena itu mari bersama melanjutkan pengembangan. Saat ini kami akan mencoba membuat dasar dasar saja dan itupun masih mencuri kesempatan ditengah pekerjaan sehari- hari. Oh ya, jika anda punya waktu untuk menejemahkan kebahasa inggris, kami akan sangat berterimakasih atas partisipasi anda dalam membantu penerjemah projek ini. Terima kasih untuk dukungan semuanya.`
 
 ## Table of contents
@@ -29,18 +29,18 @@ Here we do not plan to make a Content Management System, but was trying to make 
 
 #### Requirements
 
-PHP Bootstrap excess is not necessary specifications to make it work properly . If you have a following , it is good :
+PHP Bootstrap excess is not necessary specifications to make it work properly . If you have a following, it is good:
 
  - PHP >= 5.3
  - .htaccess with mod_rewrite
- 
-* While there may be additional required when using extension etc.
+
+While there may be additional required when using extension etc.
 
 #### Instalation
 
 1. Download the latest [Php Bootstrap](https://github.com/Harazaki/PHP-BOOTSTRAP), the way you like .
 2. Upload it to your Web server mainstay.
-3. Perform [Initial Setup](#instructions-settings)
+3. Perform [Initial Setup](#settings-instructions)
 
 ##### Settings Instructions 
 By default, You can [find these settings](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/SET_/APP_SETTING_.php) in the file `BASE/SET_/APP_SETTING_.php` ( If you have not changed ) .
@@ -52,7 +52,9 @@ What will be set ?
 - Current THEME's And Controller Setting's
 - Languange & Device Setting's
 
-#### File Structure
+##### File Structure
+
+Look, like This...
 
 ```
 PHP-BOOTSTRAP/
@@ -80,10 +82,17 @@ PHP-BOOTSTRAP/
 Everything about php-bootstrap's Documentation will be explained here, but after the project is completed. Please wait!
 `
 ## Example
+While this is an example of incomplete , will be added over time development.
 
-`
-Everything about php-bootstrap's Example will be explained here, but after the project is completed. Please wait!
-`
+##### Say Something in the World
+Create a file called hello_word.php in your content directory .
+
+```php
+ $I_am = new PHP_BOOTSTRAP;
+ $I_am->title = 'Hello Word! ';
+ $mycontent = '<div class="container"><h1 class="heading">Hello Word</h1></div>';
+ echo($I_am->display($mycontent));
+```
 
 ## Using or Build Extetion
 
@@ -93,7 +102,7 @@ Everything about php-bootstrap's extetion will be explained here, but after the 
 
 ## Contributing
 
-We invite friends who wish to join in this project. We would greatly appreciate any contribution from you to jointly develop in order to be useful to everyone on this planet. For those of you who would like to contribute, please fork / edit / commit / pull request. For bug report, please submit issues.
+We invite friends who wish to join in this project. We would greatly appreciate any contribution from you to jointly develop in order to be useful to everyone on this planet. For those of you who would like to contribute, please [fork - edit - commit](https://github.com/Harazaki/PHP-BOOTSTRAP/fork) or [pull request](https://github.com/Harazaki/PHP-BOOTSTRAP/pulls). For bug report, please [submit issues](https://github.com/Harazaki/PHP-BOOTSTRAP/issues).
 
 ## Credits
 
