@@ -1,0 +1,28 @@
+ 
+ /* Default Style  */
+ 
+html {position: relative;min-height: 100%;}
+body {margin-bottom: 70px;}
+.footer {position: absolute;bottom: 0;width: 100%;height:70px;}
+body > .main {padding: 60px 15px 0;}
+footer .text-muted,footer #footer-option { margin: 20px 0;}
+#footer-option select {
+-webkit-border-radius: 2px;
+-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+-webkit-padding-end: 20px;
+-webkit-padding-start: 2px;
+-webkit-user-select: none;
+background-image: -webkit-linear-gradient(#F9F9F9, #FFF 40%, #D5D5D5);
+background-position: 97% center;
+background-repeat: no-repeat;
+border: 1px solid #CFC3C3;
+padding: 0px 2px;
+text-overflow: ellipsis;
+white-space: nowrap;
+cursor: pointer;
+margin: 0px 2px;
+font-size: 1em;
+color: #6F6D6D;}
+.footer > .container {padding-right: 15px;padding-left: 15px;}
+.footer,.footer > .container{background-color:#EDEDED;}
+code {font-size: 80%;}
