@@ -2,23 +2,24 @@
 
 `Status : Project 'PHP bootstrap' is under construction, please wait for it to finish and we will proclaim here. While we are seeking contributors in English translation. Thank you`
 
-Mari memulai sesuatu yang sederhana, namun ajaib dan sungguh luar biasa. Yang menjawab Semua kebutuhan akan kekuatan  bahasa pemograman dan kreativitas akan keindahan sebuah design terpopuler di abad gemilang saat ini. 
+Let's start something simple, yet magical and extraordinary. That answers all the needs of the power of programming languages ​​and creativity of the beauty of a scintillating century popular designs today.
 
-Alasan utama kita mempercayai si "gajah" php sebagai dasar bangunan adalah karna dia memang kuat dan begitulah sepengetahuan kami. Anda dapat mengenal lebih dalam tentang Si Gajah ini, bagaiamana dia bekerja untuk anda didalam rumah mereka yaitu [PHP.NET](http://php.net/).
+The main reason we believe the " elephant " as the basic building php is because he is strong and that our knowledge. You can know more about The Elephant is, how he works for you in their house that is [PHP.NET](http://php.net/).
 
-Dilain pihak, Bootstrap adalah platform design masa kini, yang disukai karena memang memiliki design yang sangat seksi. Dia mampu beradapdasi dalam berbagai bentuk dan ukuran layar. Kunjungi [Getboostrap.com](http://getbootstrap.com/) untuk mendapatkan informasi lebih banyak lagi dan biarkan anda jatuh cinta pada pandangan pertama.
+On the other hand, Bootstrap is a contemporary design platform, which is preferred because it has a design that is very sexy . He was able to beradapdasi in various shapes and sizes of the screen. Visit [ Getboostrap.com ](http://getbootstrap.com/) to get more information and let you fall in love at first sight.
 
-Disini kita tidak berencana untuk membuat sebuah CMS, namun sedang berusaha membuat kerangka rumah yang kemudian dapat menjadi sebuah inspirasi untuk dapat dikembangkan agar kita dapat membangun sebuah rumah berdasar php yang seksi. Membuat bootstrap menyatu dengan proyek php kita dan berjalan mulus sehingga kita dapat lebih fokus pada apa yang kita sedang kerjakan dan menghemat waktu lebih banyak.
+Here we do not plan to make a Content Management System, but was trying to make the frame of the house which then can be an inspiration to be developed so that we can build a home based php sexy. Make bootstrap fused with our php project up and running smoothly so that we can focus more on what we 're doing and save more time.
 
-`Sebagai Catatan Bahwa proyek ini dalam tahap pembangunan. Ini mungkin masih sekedar kerangka yang belum lengkap, oleh karena itu mari bersama melanjutkan pengembangan. Saat ini kami akan mencoba membuat dasar dasar saja dan itupun masih mencuri kesempatan ditengah pekerjaan sehari- hari. Oh ya, jika anda punya waktu untuk menejemahkan kebahasa inggris, kami sangat berterimakasih untuk berkenan membantu penerjemah projek ini. Terima kasih untuk dukungan semuanya.`
+#### Are you indonesian? Translate This
+`Sebagai Catatan Bahwa proyek ini masih dalam tahap pembangunan. Ini mungkin masih sekedar kerangka yang belum lengkap, oleh karena itu mari bersama melanjutkan pengembangan. Saat ini kami akan mencoba membuat dasar dasar saja dan itupun masih mencuri kesempatan ditengah pekerjaan sehari- hari. Oh ya, jika anda punya waktu untuk menejemahkan kebahasa inggris, kami akan sangat berterimakasih atas partisipasi anda dalam membantu penerjemah projek ini. Terima kasih untuk dukungan semuanya.`
 
 ## Table of contents
 
-- [Get Started](#get-gtarted)
+- [Get Started](#get-started)
 - [Documentation](#documentation)
-- [Using or Build Extetion](#Using-or-Build-Extetion)
+- [Using or Build Extetion](#using-or-build-extetion)
 - [Example](#example)
-- [Contributing](#Contributing)
+- [Contributing](#contributing)
 - [Credits](#credits)
 - [Copyright and license](#copyright-and-license)
 
