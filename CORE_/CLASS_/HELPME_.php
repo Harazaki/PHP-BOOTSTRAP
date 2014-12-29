@@ -1,8 +1,8 @@
 <?php if( !defined('HARAZAKIDA') ) exit('THIS APLICATION HAS CRASH');
 
   /* 
-     * OPEN SOURCE PROJECTS Â© HARAZAKI 2014 
-	     @ HELPER CLASSES TO HANDLE BAD PROSESS
+     * OPEN SOURCE PROJECTS © HARAZAKI 2014 
+	   A HELPER CLASSES TO HANDLE BAD PROSESS
 	   - Learn more about at https://github.com/Harazaki/PHP-BOOTSTRAP
 	   - Note: It's still just a skeleton , therefore let's together to continue the development . This time we will try to make the fundamental basis only. Thanks for the support everyone .
 	 *
