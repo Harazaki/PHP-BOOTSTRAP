@@ -9,7 +9,7 @@
 	 
  */
  
- // Default SEPARATOR, like \
+ // Default SEPARATOR (\)
  define('DS', DIRECTORY_SEPARATOR);
  
  // The base direktori of app
@@ -22,4 +22,4 @@
  define('D_SET', D_BASE. 'SET_' .DS);
  
  // Load the basic function
- require_once D_CORE.'FUNC_'.DS.'BASIC__.php';
+ if( $d_C0r = ( ( defined('D_CORE') ) ? ( file_exists($d_C0r3 = D_CORE.'FUNC_'.DS.'BASIC__.php') ? $d_C0r3 : false ) : ( (defined('D_BASE')) ? ( file_exists($d_C0r3 = D_BASE.'CORE_'.DS.'FUNC_'.DS.'BASIC__.php') ? $d_C0r3 : false ) :false) ) ) require_once $d_C0r;
