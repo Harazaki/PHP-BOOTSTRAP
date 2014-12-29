@@ -25,11 +25,38 @@ Here we do not plan to make a Content Management System, but was trying to make 
 
 ## Get Started
 
-### The Structrure
+
+
+#### Requirements
+
+-PHP >= 5.3
+
+#### Instalation
+
+
+#### File Structure
 
 ```
-php-bootstrap/
+PHP-BOOTSTRAP/
+├── CORE/...
+│   ├── CLASS_/...
+│   ├── FUNC__/...
+│   ├── LIB_/...
+├── SET_/...
+│   ├── CONTENT_/...
+│   ├── CONTROLER_/...
+│   ├── LANG_/...
+│   ├── THEME_/...
+|   └── APP_SETTING_.php
+|   └── Another Set File
+└── STATIC/
+|   ├── LIB/...
+|   ├── TEMPLATE/...
+└── .htaccess
+└── base_init.php
+└── index.php
 ```
+
 ## Documentation
 `
 Everything about php-bootstrap's Documentation will be explained here, but after the project is completed. Please wait!
