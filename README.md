@@ -116,6 +116,4 @@ Code and Documentation of PHP-BOOTSTRAP copyright 2014-2015 PT.Harazakida. Code 
 
 Code of BOOTSTRAP copyright Twitter, Inc. Code released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 
-And Licencie of Open Source other woods owned on each - each related organization in it that can be found in the source .
-
-
+And Licencie of Open Source other woods owned on each - each related organization in it that can be found in the source.
