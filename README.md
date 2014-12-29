@@ -29,10 +29,28 @@ Here we do not plan to make a Content Management System, but was trying to make 
 
 #### Requirements
 
--PHP >= 5.3
+PHP Bootstrap excess is not necessary specifications to make it work properly . If you have a following , it is good :
+
+ - PHP >= 5.3
+ - .htaccess with mod_rewrite
+ 
+* While there may be additional required when using extension etc.
 
 #### Instalation
 
+1. Download the latest [Php Bootstrap](https://github.com/Harazaki/PHP-BOOTSTRAP), the way you like .
+2. Upload it to your Web server mainstay.
+3. Perform [Initial Setup](#instructions-settings)
+
+##### Settings Instructions 
+By default, You can [find these settings](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/SET_/APP_SETTING_.php) in the file `BASE/SET_/APP_SETTING_.php` ( If you have not changed ) .
+
+What will be set ?
+- A Cool Name For Your Application
+- Directory / Patch setting's
+- Your APLICATION URL
+- Current THEME's And Controller Setting's
+- Languange & Device Setting's
 
 #### File Structure
 
