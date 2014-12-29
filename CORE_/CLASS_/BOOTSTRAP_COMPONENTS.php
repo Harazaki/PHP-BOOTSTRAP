@@ -1,14 +1,13 @@
 <?php if( !defined('HARAZAKIDA') || !defined('BOOTSTRAP_COMPONENT') ) exit;
 
   /*  
-     OPEN SOURCE PROJECTS Â© HARAZAKI 2014
+     OPEN SOURCE PROJECTS © HARAZAKI 2014
 	 [THE PHP BOOTSTRAP_COMPONENT CLASSES](https://github.com/Harazaki/PHP-BOOTSTRAP/blob/master/CORE_/CLASS_/BOOTSTRAP_COMPONENTS.php)
 	  - Learn more about at http://getbootstrap.com/components/
 	  - Notes : It's still just a skeleton , let's continue the development of the future,
 	  - You can contribut at https://github.com/Harazaki/PHP-BOOTSTRAP
   */  
 
-  
   
   Class BOOTSTRAP_COMPONENT {
   
@@ -164,14 +163,14 @@
 		return $script;
 	  }
 	  
-	  function device_dropdown(){ 
+	  function device_dropdown($type='autosubmit'){ 
 	      $list = ( defined('APP_LAYOUT') ? explode(',',APP_LAYOUT) : NULL );
-		  if($list) { return $this->select_dropdown('device',$list,$this->layout,'switch-device','ajaxs'); }
+		  if($list) { return '<form method="POST" class="col-sm-6">'.$this->select_dropdown('device',$list,$this->layout,'switch-device',$type).'</form>'; }
 	  }
 	  
-	  function lang_dropdown(){ 
+	  function lang_dropdown($type='autosubmit'){ 
 	      $list = ( defined('APP_LANG') ? explode(',',APP_LANG) : NULL );
-		  if($list) { return $this->select_dropdown('lang',$list,$this->lang,'switch-lang','ajaxs'); }
+		  if($list) { return '<form method="POST" class="col-sm-6">'.$this->select_dropdown('lang',$list,$this->lang,'switch-lang',$type).'</form>'; }
 	  }
 	  
 	  function custom_css($src=''){
