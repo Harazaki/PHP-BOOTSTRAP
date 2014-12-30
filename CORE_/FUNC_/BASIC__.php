@@ -10,17 +10,18 @@
 	
    define('FUNC_BASIC',TRUE);
    
-    /* // TOLONG TERJEMAHKAN INI SEBAIK MUNGKIN // ¬
-	
-	   Disini kita mendefenisikan FUNC_BASIC dengan tujuan :
-	   - Sebagai kunci antar class class dasar aplikasi dengan fungsi utama ini
-	   - Mencegah pemanggilan class berulang di halaman lain sehingga mudah memeriksa bugs.
-	   - Tidak ada tujuan lain, selain yang terbaik :V
+    /* Here we define FUNC_BASIC with the aim of :
+	  - As a key inter- class base class with the main function of this application
+	  - Preventing recurrent class calling on other pages so easy to check bugs .
+	  - There is no other purpose , but the best
     */
    
-    /* Wajib Memanggil semua pengaturan yang telah didefinisikan untuk aplikasi
-	   * Demi keamanan, mungkin kita perlu merubah konfigurasi ini (Dengan hati2),
-	     Atau jangan disentuh bila tidak mengerti apa itu hati-hati
+    /* 
+	
+	Mandatory Calling all the settings that have been defined for the application
+	   
+	   * For security reasons , perhaps we need to change this configuration ( With hati2 ) ,
+	     Or should not be touched if not understand what it carefully
 	*/
 	
 	if( defined('D_SET') && file_exists($DSet = D_SET.'APP_SETTING_.php' ) ) include_once($DSet);
@@ -29,8 +30,9 @@
  
    /* 
       •___  Load CLASS  ___•
-	 - Pada versi berikutnya class2 dibawah akan kita gunakan untuk pengembangan
-     - Dan biarkan mereka tetap terstruktur meskipun kelihatan berantakan.
+	  
+	 - In the next version, class below we will use for development
+     - And let them remain structured though looks messy 
 	 
    */
    
@@ -47,9 +49,10 @@
    include_once D_CLASS.'SESSION_.php';
   
    /* Start The Session
-     - set($variable, $value) untuk mengatur sebuah sesi
-	 - is_set($variabel) untuk mengambil sebuah sesi, akan menghasilkan 'false' jika
-	   Belum diatur atau kosong.
+   
+     - Set ( $ variable , $ value ) to set up a session .
+	 - Is_set ( $ variable ) to take a session , will generate ' false ' if it is not set or empty .
+	 
    */
 
    $S_E_S_I = new APP_Session;
@@ -156,21 +159,27 @@
       Data or Input Filter and Cleaner
 	  First, Set the regex on [data_filter] class
 		
-	  $filter_type : 
+	  $v_type : 
 	    - isvalid : Return @data when True and return False if don't valid
 		- clean : Replace data with current rules and return it
-	  
+	  $data : A string or Array
    */
    
   function data_filter($v_type=false,$data=0){
   
-     if($v_type && $data){
+     if($v_type){
 	 
-         require(D_SET.VALIDATOR_SETTING.'.php');
+	     if( file_exists($class_VaL=D_CLASS.'VALIDATION_.php') ) { 
+		 
+		     require_once($class_VaL);
+			 return $value = new APP_VALIDATION($v_type,$data);
+		 
+		 }
+		 
+		 else{ handle_this('CLASS_NOT_FOUND','Please Define The Class (VALIDATION)'); }
+ 
+	 } else { return false; }
 	 
-	 }
-	 
-     else { handle_this('Validator Missing','Please Define v_type and data'); }
   }
   
   
