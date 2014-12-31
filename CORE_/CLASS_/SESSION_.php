@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit;
+<?php ( defined('PHP_BOOTSTRAP') && defined('FUNC_BASIC') ) OR handle_this();
 
  /* 
      * OPEN SORCE PROJECTS © HARAZAKI 2014 

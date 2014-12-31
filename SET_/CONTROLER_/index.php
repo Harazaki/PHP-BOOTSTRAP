@@ -1,4 +1,4 @@
-<?php if(!defined('HARAZAKIDA')) exit;
+<?php defined('PHP_BOOTSTRAP') OR handle_this('DIRECTORY_BROWSING');
  
  /* 
      * OPEN SORCE PROJECTS © HARAZAKI 2014 
@@ -6,7 +6,7 @@
 	 // Source https://github.com/Harazaki/PHP-BOOTSTRAP
  */
  
- if(ONE=='docs') {
+ if(ONE=='docs' || TWO=='docs' || THREE=='docs') {
    
    $mycontent = new PHP_BOOTSTRAP;
    $mycontent->title = 'Hello Word! ' . APP_NAME;

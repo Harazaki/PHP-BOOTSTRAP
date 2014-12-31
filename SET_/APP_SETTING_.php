@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) handle_this('Function File Not FOUND','This App Need The Basic Function');
+<?php ( defined('PHP_BOOTSTRAP') && defined('FUNC_BASIC') ) OR handle_this();
 
  /* 
      * OPEN SORCE PROJECTS © HARAZAKI 2014 
@@ -8,10 +8,12 @@
 	 
  */
  
+ /* Enabled Error Repoting */
+ define('show_error',false);
+ 
  /* Ok, give a awesome name for this project */
  define('APP_NAME','PHP BOOTSTRAP');
- 
- 
+
  // ______ DIRECTORY / PATCH SETTING's ______  //
   
  if( !defined('D_CORE') ) handle_this('The CORE Not FOUND','This App Need The Core, Defined It On Setting\'s File');
@@ -30,24 +32,29 @@
      Filter File's Request
 	 - The File Request URI Will be preg_replace by this regex
  */
+ 
  define('FILE_REQUEST', '/[^a-zA-Z0-9_-]/');
  
  
  //______ APLICATION URL Setting ______//
  
  
- define('APP_PROTOCOL', 'http://');
- define('APP_DOMAIN', $_SERVER['HTTP_HOST']); //$_SERVER['DOCUMENT_ROOT']
- 
   /* 
      [ BASE URL ] of this APP
 	  - The url must a full with starting with HTTP protocol, 
-	    Will be use by template to linked the source like script and another file's need to
-		build a layout.
-	  - True ex. http://www.yourdomainaliasperfect.com
+	    Will be use by template to linked the source like script and another file's,
+		need to build a layout.
+		
+	  - Example: http://example.com/ , http://localhost/myapp/ or http://example.com/myapp/
+	  
+	  - Or, Use experimental short way :  
+	  
+	      'CURRENT_PROTOCOL' : will return http or https
+		  'PHP_BOOTSTRAP_URL' : Auto detect current app base url location
   */
   
- define('APP_URL', APP_PROTOCOL.APP_DOMAIN);
+ define('APP_URL', PHP_BOOTSTRAP_URL); // Aplication base path url location (with slash [/])
+ 
  
  /*  Url location are stored public file */
  define('STATIC_URL', APP_URL.'/STATIC/');

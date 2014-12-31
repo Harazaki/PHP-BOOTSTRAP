@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') ) exit;
+<?php defined('PHP_BOOTSTRAP') OR handle_this('DIRECTORY_BROWSING');
 
  /* 
      * The PHP BOOTSTRAP LANG

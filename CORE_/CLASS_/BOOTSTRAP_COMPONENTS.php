@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('BOOTSTRAP_COMPONENT') ) exit;
+<?php ( defined('PHP_BOOTSTRAP') && defined('BOOTSTRAP_COMPONENT') ) OR handle_this();
 
   /*  
      OPEN SOURCE PROJECTS © HARAZAKI 2014

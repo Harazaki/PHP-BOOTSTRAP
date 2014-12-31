@@ -1,11 +1,11 @@
 <IfModule mod_rewrite.c>
-
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-
-
+DirectoryIndex index.php index.html
+RewriteEngine on
+#PHP-BOOTSRAP
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond $1 ^(robots\.txt|favicon\.ico)
+RewriteRule ^(.*)$ - [L]
+# use index.php as front controller ...
+RewriteRule ^(.*)$ ./index.php/$1 [L]
 </IfModule>

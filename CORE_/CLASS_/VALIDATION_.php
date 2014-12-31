@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') ) handle_this('DIRECTORY_BROWSING','VALIDATION_');
+<?php ( defined('PHP_BOOTSTRAP') && defined('FUNC_BASIC') ) OR handle_this();
 
   /* 
      * OPEN SOURCE PROJECTS © HARAZAKI 2014 

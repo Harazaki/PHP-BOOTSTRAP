@@ -1,4 +1,4 @@
-<?php define('HARAZAKIDA',TRUE);
+<?php define('PHP_BOOTSTRAP',TRUE);
 
  /* 
      * OPEN SORCE PROJECTS © HARAZAKI 2014 

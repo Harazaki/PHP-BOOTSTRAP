@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('FUNC_BASIC') ) exit('FUNC_BASIC are Reqruitments');
+<?php ( defined('PHP_BOOTSTRAP') && defined('FUNC_BASIC') ) OR handle_this();
 
   /* 
        * OPEN SOURCE PROJECTS © HARAZAKI 2014 

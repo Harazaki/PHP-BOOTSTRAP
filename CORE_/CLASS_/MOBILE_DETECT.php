@@ -1,8 +1,10 @@
-<?php
+<?php ( defined('PHP_BOOTSTRAP') && defined('FUNC_BASIC') ) OR handle_this();
 
  /*
-    Mobile_Detect is a lightweight PHP class for detecting mobile devices (including tablets). It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.
+    Mobile_Detect is a lightweight PHP class for detecting mobile devices (including tablets).
+	
     @credits https://github.com/serbanghita/Mobile-Detect
+	
  */
  
  

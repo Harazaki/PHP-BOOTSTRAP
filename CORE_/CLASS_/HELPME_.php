@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') ) exit('THIS APLICATION HAS CRASH');
+<?php defined('PHP_BOOTSTRAP') OR exit('THIS APLICATION HAS CRASH');
 
   /* 
      * OPEN SOURCE PROJECTS © HARAZAKI 2014 

@@ -1,12 +1,12 @@
-<?php if( !defined('HARAZAKIDA') || !defined('THIS_THEME') ) exit;
+<?php ( defined('PHP_BOOTSTRAP') && defined('THIS_THEME') ) OR handle_this('DIRECTORY_BROWSING');
 
   /* 
      * OPEN SOURCE PROJECTS © HARAZAKI 2014 
 	   @ PHP BOOOTSRAP PACKAGES
-	   About: V1 TEMPLATE FUNCTION
+	   Theme's Name : V1
 	     - This is a default template for,
-		 - You wan to creating the new template, 
-		   BY Copy this Folder and place it on THEME DIRECTORY with another names,
+		 - You wan to creating the new template, BY Copy this Folder 
+		   and place it on THEME DIRECTORY with another names,
 		    *Don't forget to Set it On Setting file
 	 * Source https://github.com/Harazaki/PHP-BOOTSTRAP
 	 

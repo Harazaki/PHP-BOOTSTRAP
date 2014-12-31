@@ -1,4 +1,4 @@
-<?php if( !defined('HARAZAKIDA') || !defined('THIS_THEME') ) exit;
+<?php ( defined('PHP_BOOTSTRAP') && defined('THIS_THEME') ) OR handle_this('DIRECTORY_BROWSING');
 
  /* 
      * OPEN SORCE PROJECTS © HARAZAKI 2014 

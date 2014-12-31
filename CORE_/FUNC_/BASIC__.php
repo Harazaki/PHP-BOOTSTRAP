@@ -1,4 +1,4 @@
-<?php if(!defined('HARAZAKIDA')) handle_this('DIRECTORY_BROWSING','BASIC');
+<?php defined('PHP_BOOTSTRAP') OR handle_this();
  
  /* 
      * OPEN SORCE PROJECTS © HARAZAKI 2014 
@@ -7,7 +7,7 @@
 	 * Source https://github.com/Harazaki/PHP-BOOTSTRAP
 	 
  */
-	
+
    define('FUNC_BASIC',TRUE);
    
     /* Here we define FUNC_BASIC with the aim of :
@@ -25,9 +25,9 @@
 	*/
 	
 	if( defined('D_SET') && file_exists($DSet = D_SET.'APP_SETTING_.php' ) ) include_once($DSet);
+	
 	else handle_this('SETTING\'s File Not FOUND','This App Need The File\'s Setting');
- 
- 
+
    /* 
       •___  Load CLASS  ___•
 	  
@@ -61,13 +61,10 @@
  /* •__________ THE BASIC FUNCTION __________• */
   
   
-  function url($page=0){
-     if($page) { $url = APP_URL.'/'.$page; }
-	 else { $url = '#'; }
-	 return $url;
+  function url($page=false){
+     return $url = ( ($page) ? APP_URL.$page : '#');
   }
-  
-  
+
     //For handling the error
   function handle_this($about='ERROR',$solution=''){
   
