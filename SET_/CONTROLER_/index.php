@@ -6,7 +6,7 @@
 	 // Source https://github.com/Harazaki/PHP-BOOTSTRAP
  */
  
- if(ONE=='docs' || TWO=='docs' || THREE=='docs') {
+ if(ONE=='docs') {
    
    $mycontent = new PHP_BOOTSTRAP;
    $mycontent->title = 'Hello Word! ' . APP_NAME;
@@ -16,7 +16,7 @@
  }
  
  else{ 
-
+ 
  $GET_CONTENT = TRUE;
  
  }
