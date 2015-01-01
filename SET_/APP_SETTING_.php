@@ -8,39 +8,86 @@
 	 
  */
  
- /* Enabled Error Repoting */
+ /* Enabled Error Reporting (PHP) */
  define('show_error',false);
  
  /* Ok, give a awesome name for this project */
  define('APP_NAME','PHP BOOTSTRAP');
-
- // ______ DIRECTORY / PATCH SETTING's ______  //
+ 
+ 
+ /* ====================================== DIRECTORY SETTING ========================================   */
+ 
+ 
+ // ______ CORE DIRECTORY ______  //
   
- if( !defined('D_CORE') ) handle_this('The CORE Not FOUND','This App Need The Core, Defined It On Setting\'s File');
+ defined('D_CORE') OR handle_this('The CORE Not FOUND','This App Need The Core Base, Defined It On INIT File');
   
+ /* Classes directory 
+     Default Location : PHP-BOOTSTRAP\CORE_\CLASS_ 
+ */
+ 
  define('D_CLASS', D_CORE. 'CLASS_' .DS);
+ 
+ /* Library's extetions directory 
+     Default Location : PHP-BOOTSTRAP\CORE_\LIB_ 
+ */ 
+ 
  define('D_LIB', D_CORE. 'LIB_' .DS);
+ 
+  // ______ SET DIRECTORY ______  //
 
+ /* Controller's DIR 
+     Default Location : PHP-BOOTSTRAP\SET_\CONTROLER_      
+ */
+ 
  define('D_CONTROL', D_SET. 'CONTROLER_' .DS);
+ 
+ /* Themes's DIR
+     Default Location : PHP-BOOTSTRAP\SET_\THEME_      
+ */
+ 
  define('D_THEME', D_SET. 'THEME_' .DS);
+ 
+ /* Content's DIR
+     Default Location : PHP-BOOTSTRAP\SET_\CONTENT_      
+ */
+ 
  define('D_CONTENT', D_SET. 'CONTENT_' .DS);
+ 
+ /* Languanges DIR
+     Default Location : PHP-BOOTSTRAP\SET_\LANG_      
+ */
+ 
  define('D_LANG', D_SET. 'LANG_' .DS);
-
+ 
+ 
+  // ______ PUBLIC DIRECTORY ______  //
+ 
+ /* Static BASE DIR
+     Default Location : PHP-BOOTSTRAP\STATIC_      
+ */
+ 
  define('D_STATIC', D_BASE. 'STATIC'.DS);
  
- /*
-     Filter File's Request
-	 - The File Request URI Will be preg_replace by this regex
+ /* Filter File's Request
+	 - The File PATH_INFO Will be preg_replace by this regex
  */
+ 
+  // ______ FILTER REQUEST ______  //
  
  define('FILE_REQUEST', '/[^a-zA-Z0-9_-]/');
  
  
- //______ APLICATION URL Setting ______//
+ 
+ /* ====================================== ! END DIRECTORY SETTING ===============================   */
+ 
+ /* ====================================== APP URL SETTING =====================================   */
+
  
  
   /* 
-     [ BASE URL ] of this APP
+        ______ APLICATION URL Setting [ BASE URL ] of this APP ______ 
+	 
 	  - The url must a full with starting with HTTP protocol, 
 	    Will be use by template to linked the source like script and another file's,
 		need to build a layout.
@@ -57,15 +104,19 @@
  
  
  /*  Url location are stored public file */
+ 
  define('STATIC_URL', APP_URL.'/STATIC/');
+ 
  define('STATIC_CDN', STATIC_URL);
  
  /* The bootstrap & jquery lib, this file will be load by theme */
  define('STATIC_LIB', APP_URL.'/STATIC/LIB/');
  
+ /* ====================================== ! END URL SETTING =====================================   */
  
-  
- //___  THEME's And Controller Setting  ____//
+ 
+ /* ========================== THEME's And CONTROLLER Setting's ================================   */ 
+
  
  /*	
 	 - By default BOOTSTRAP_COMPONENT are requitments by templates, but
@@ -74,25 +125,32 @@
  
  define('USE_CONTROLLER',TRUE); // Comment this line when not using the controller
  
- define('BOOTSTRAP_COMPONENT', TRUE); // Load The Bootrap component
-
- define('APP_THEMA','V1'); // Current theme are using
+ define('BOOTSTRAP_COMPONENT', TRUE); // Load The Bootstrap component classes
  
- define('STATIC_THEME', STATIC_CDN.'TEMPLATE/'.APP_THEMA.'/'); // The static url of Current template
+ /*   
+     Here you must activated your themes
+ */
+ 
+ define('APP_THEMA','V1'); // Current theme are using, and must exists on themes DIR
+ 
+ define('STATIC_THEME', STATIC_URL.'TEMPLATE/'.APP_THEMA.'/'); // The static url of Current template
   
+ /* ========================== ! END THEME's And CONTROLLER Setting's ================================   */
  
- //____ LANGUANGE & THE LAYOUT _____//
+ 
+ /* ========================== LANGUANGE & DEVICE SETTING ================================   */
  
  
   /* Use the basic function for handel switch lang or layout,
-     or comment the line and handel with another function 
+     or comment the line and handel with your another custom function 
   */
+  
   define('USE_SWITCH_FUNCTION',TRUE);
   
-  /* 
-     Languanges are exist for this aplication
-     - Before it, the file must be exist on directory of lang (D_LANG)
-  */
+ /* Languanges are exists for this aplication
+     - Before using, the file must be exist on directory of lang (D_LANG)
+ */
+  
  define('APP_LANG','BAHASA INDONESIA,ENGLISH');
  
  /* Default Lang for app */
@@ -107,10 +165,10 @@
  /* Allow the request to SWITCH the layout or device ? */
  define('ENABLED_LAYOUT_SWITCH',TRUE); // commented at the beginning of the line to shut down
  
+ /* ========================== ! END LANGUANGE & DEVICE SETTING ================================   */
  
- 
- //____ ADDITIONAL EXTETION ____/
+ /* ========================== + ADITIONAL SETTING"S ================================   */
  
   /*
-     Coming soon	 
+     Coming soon, will be add here
   */
