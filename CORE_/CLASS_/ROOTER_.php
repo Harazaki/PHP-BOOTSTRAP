@@ -14,13 +14,13 @@ class APP_Rooter {
  
  function __construct(){
  
-  $this->path = $_SERVER['REQUEST_URI'];
+  $this->path = $_SERVER['PATH_INFO'];  //$_SERVER['REQUEST_URI'];
   
-     define( 'REQ_1',$this->req(1) );
-     define( 'REQ_2',$this->req(2) );
-     define( 'REQ_3',$this->req(3) ); 
-     define( 'REQ_4',$this->req(4) ); 
-     define( 'REQ_5',$this->req(5) );
+     define('REQ_1',$this->req(1) );
+     define('REQ_2',$this->req(2) );
+     define('REQ_3',$this->req(3) ); 
+     define('REQ_4',$this->req(4) ); 
+     define('REQ_5',$this->req(5) );
 	 
   $this->get_controller = ( ( defined('USE_CONTROLLER') && $this->current_controller() ) ? $this->current_controller() : false );
   $this->get_content = ( ($this->current_content()) ? $this->current_content() : false );
@@ -136,6 +136,7 @@ class APP_Rooter {
 	 }
 	 
 	 else{
+	 
 	     if( file_exists($CON = D_CONTENT.REQ_1.'.php' ) ) return $CON;
 		 else if( file_exists($CON = D_CONTENT.'index.php' ) ) return $CON;
 	 }
