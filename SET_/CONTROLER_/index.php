@@ -11,7 +11,8 @@
    $mycontent = new PHP_BOOTSTRAP;
    $mycontent->title = 'Hello Word! ' . APP_NAME;
    $content = '<div class="container"> <h1 class="heading">Coming Soon...,</h1><hr/><div class="alert alert-warning" role="alert">Documents and examples are in preparation , please wait and <a href="https://github.com/Harazaki/PHP-BOOTSTRAP">keep track of the latest developments </a>.</div></div>';
-   echo($mycontent->display($content));
+   
+   $mycontent->display($content);
  
  }
  

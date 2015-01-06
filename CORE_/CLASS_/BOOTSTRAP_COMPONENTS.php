@@ -9,7 +9,7 @@
   */  
 
   
-  Class BOOTSTRAP_COMPONENT {
+  class BOOTSTRAP_COMPONENT {
   
        public $layout = 'DESKTOP';
 	   public $lang = '';
@@ -33,6 +33,12 @@
 		 $this->lang = $S_E_S_I->lang; 
 	  }
 	  
+	  function display($content='',$ouTput=TRUE) {
+	     $PRINT = ( $this->head ? $this->head : $this->head() ) .( $this->header  ? $this->header : $this->header() ).
+		 ((empty($this->content)) ? null : $this->content ).( $this->content($content) ).( $this->meta_foot ? $this->meta_foot : $this->meta_foot() ). ( $this->footer ? $this->footer : $this->footer()  );		 
+		 if($ouTput) echo $PRINT; else return $PRINT;
+	  }
+	  
 	  /*  * [ DROPDOWN  MENU ] *
 	  
 	      - $data must be an array, 
@@ -40,12 +46,6 @@
 		  - $class & $id is additional, can be empty
 		  
 	  */
-	  
-	  function display($content='') {
-	     $PRINT = ( $this->head ? $this->head : $this->head() ) .( $this->header  ? $this->header : $this->header() ).
-		 ((empty($this->content)) ? null : $this->content ).( $this->content($content) ).( $this->meta_foot ? $this->meta_foot : $this->meta_foot() ). ( $this->footer ? $this->footer : $this->footer()  );		 
-		 return $PRINT;
-	  }
 	  
 	  function dropdown_menu($data='',$class=null,$id=null){
 	  
