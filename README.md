@@ -123,12 +123,12 @@ Create a file called `mycontrolllername.php` in your ` D_CONTROL ` directory. Li
 Create a file called `hello_word.php` in your `D_CONTENT` directory. Like this:
 
 ```php
- $I_am = new PHP_BOOTSTRAP;
- $I_am->title = 'Hello Word';
+ $page = new PHP_BOOTSTRAP;
+ $page->title = 'Hello Word';
  $mycontent = '<div class="container"> <h1>Welcome to my Pages<h1> </div>';
  // if using controller, Get Data
  $mycontent .= ( ($GET_CONTENT) ? $GET_CONTENT : null );
- echo($I_am->display($mycontent));
+ $page->display($mycontent));
 ```
 <hr/>
 ###### Another Examples
