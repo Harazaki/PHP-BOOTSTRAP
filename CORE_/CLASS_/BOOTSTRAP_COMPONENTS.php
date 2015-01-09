@@ -35,7 +35,7 @@
 	  
 	  function display($content='',$ouTput=TRUE) {
 	     $PRINT = ( $this->head ? $this->head : $this->head() ) .( $this->header  ? $this->header : $this->header() ).
-		 ((empty($this->content)) ? null : $this->content ).( $this->content($content) ).( $this->meta_foot ? $this->meta_foot : $this->meta_foot() ). ( $this->footer ? $this->footer : $this->footer()  );		 
+		 ((empty($this->content)) ? null : $this->content ).( $this->content($content) ). ( $this->footer ? $this->footer : $this->footer()  ).( $this->meta_foot ? $this->meta_foot : $this->meta_foot() );		 
 		 if($ouTput) echo $PRINT; else return $PRINT;
 	  }
 	  
