@@ -35,8 +35,9 @@
 	  
 	  function display($content='',$ouTput=TRUE) {
 	     $PRINT = ( $this->head ? $this->head : $this->head() ) .( $this->header  ? $this->header : $this->header() ).
-		 ((empty($this->content)) ? null : $this->content ).( $this->content($content) ). ( $this->footer ? $this->footer : $this->footer()  ).( $this->meta_foot ? $this->meta_foot : $this->meta_foot() );		 
-		 if($ouTput) echo $PRINT; else return $PRINT;
+		 ((empty($this->content)) ? null : $this->content ).( $this->content($content) ). ( $this->footer ? $this->footer : $this->footer()  ).( $this->meta_foot ? $this->meta_foot : $this->meta_foot() );
+		   // - Return option
+		 if($ouTput) echo html_min($PRINT); else return html_min($PRINT);
 	  }
 	  
 	  /*  * [ DROPDOWN  MENU ] *
