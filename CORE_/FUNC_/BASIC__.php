@@ -80,6 +80,14 @@
   }
   
   
+  //Spaces that will add a lot of space, and we clean it so that the output be clean.
+  
+  function html_min($valll){
+	$output = preg_replace('/\s+/', ' ',$valll);
+    return $output;
+  }
+  
+  // Use template
   function set_php_bootstrap(){
   
        $ROOTERS = new APP_Rooter;
