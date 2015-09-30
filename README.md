@@ -72,7 +72,7 @@ By default, You can [find these settings](https://github.com/Harazaki/PHP-BOOTST
 What will be set ?
 - A Cool Name For Your Application
 - Directory / Patch setting's
-- Your APLICATION URL
+- Your APPLICATION URL
 - Current THEME's And Controller Setting's
 - Languange & Device Setting's
 
