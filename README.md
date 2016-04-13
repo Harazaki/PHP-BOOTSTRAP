@@ -1,5 +1,5 @@
 # [PHP Bootstrap](https://github.com/Harazaki/PHP-BOOTSTRAP#)
-Let's start something simple, yet magical and extraordinary. That answers all the needs of the power of programming languages and creativity of the beauty of a scintillating century popular designs today.
+Awesome ... Let's start something simple, yet magical and extraordinary. That answers all the needs of the power of programming languages and creativity of the beauty of a scintillating century popular designs today.
 
 The main reason we believe the " elephant " as the basic building php is because he is strong and that our knowledge. You can know more about The Elephant is, how he works for you in their house that is [PHP.NET](http://php.net/).
 
