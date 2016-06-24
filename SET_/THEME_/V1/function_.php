@@ -29,7 +29,7 @@
 	  function meta_foot($foot=''){
 	  
 	      // example custom script : $this->bootstrap_js($my_custom_source);
-	     $meta_footer = $this->bootstrap_js(STATIC_THEME.'js/custom.js').( $this->js ? $this->js : NULL).'</body></html>';
+	     $meta_footer = $this->bootstrap_js(STATIC_THEME.'JS/custom.js').( $this->js ? $this->js : NULL).'</body></html>';
 	     return $this->meta_foot = $meta_footer;
 		 
 	  }
