@@ -9,6 +9,7 @@ Here we do not plan to make a Content Management System, but was trying to make 
 
 ## Table of contents
 - [Overview](#overview)
+- [Details](#details)
 - [Get Started](#get-started)
 - [Documentation](#documentation)
 - [Example](#example)
@@ -44,6 +45,9 @@ Providing full customization on the application so that he was not ambiguous and
 
 ##### Easy for novice developers <hr/>
 It is suitable for all people, both for experts and beginners. Structure simple application designed so as not to kink so that in time can instantly understand. And can easily create extensions, the template without the course again, Because the function is common to use php syntax. Also available libraries are possible if you want to use to help.
+
+## Details
+Currently using Bootstrap version 3.3.7
 
 ## Get Started
 
