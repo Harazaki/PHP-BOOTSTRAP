@@ -11,16 +11,16 @@
  
  $LANG_ = array(
    //Terjemahan Menu Navigasi
- 'Get Started' => 'Mari Memulai !',
- 'Example' => 'Contoh Aplikasi ',
+ 'Get Started' => 'Mari Memulai',
+ 'Example' => 'Contoh',
  'Overview' => 'Ikhtisar',
  'Docs' => 'Dokumentasi',
- 'Hello Word' => 'Hallo Dunia !',
+ 'Hello Word' => 'Hallo Dunia!',
  'Another Page' => 'Halaman Lain',
  'Custom Pages' => 'Halaman Kostum',
  'Mobile Layout' => 'Tampilan Ponsel',
  'Tablet Layout' => 'Tampilan Tablet',
  'Desktop Layout' => 'Tampilan Desktop',
- 'Another Languange' => 'Multi Bahasa',
- 'All Right reserved' => 'Hak Cipta Dilindungi UU',
+ 'Another Languange' => 'Bahasa Lainnya',
+ 'All Right reserved' => 'Hak Cipta Dilindungi',
  );
