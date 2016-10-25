@@ -11,4 +11,14 @@
  $LANG_ = array(
  'Get Started' => 'Get STARTED !',
  'Example' => 'Example ',
+ 'Overview' => 'Overview',
+ 'Docs' => 'Documentations',
+ 'Hello Word' => 'Hello Word!',
+ 'Another Page' => 'Another Page',
+ 'Custom Pages' => 'Custom Pages',
+ 'Mobile Layout' => 'Mobile Layout',
+ 'Tablet Layout' => 'Tablet Layout',
+ 'Desktop Layout' => 'Desktop Layout',
+ 'Another Languange' => 'Another Languange',
+ 'All Right reserved' => 'All Right reserved',
  );
