@@ -144,7 +144,7 @@ We invite friends who wish to join in this project. We would greatly appreciate 
 
 ## Credits
 
-- [Harazaki Main Heveloper](https://github.com/Harazaki/PHP-BOOTSTRAP/)
+- [Harazaki Main Heveloper](http://www.harazakida/)
 - [Twbs (twitter.inc)](https://github.com/twbs/)
 - [Mobile-Detect](https://github.com/serbanghita/Mobile-Detect)
 - [And all Developers](https://github.com/Harazaki/PHP-BOOTSTRAP/graphs/contributors)
