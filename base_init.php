@@ -25,7 +25,7 @@
  define('CURRENT_PROTOCOL', ( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http' ) );
  
  // Detect Url App testing
- define('PHP_BOOTSTRAP_URL', ( (isset($_SERVER['HTTP_HOST']) && preg_match('/^((\[[0-9a-f:]+\])|(\d{1,3}(\.\d{1,3}){3})|[a-z0-9\-\.]+)(:\d+)?$/i', $_SERVER['HTTP_HOST'])) ? sprintf('%s://%s%s',CURRENT_PROTOCOL,$_SERVER['SERVER_NAME'],substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], basename($_SERVER['SCRIPT_FILENAME'])))) : 'http://localhost/') );
+ define('PHP_BOOTSTRAP_URL', ( (isset($_SERVER['HTTP_HOST']) && preg_match('/^((\[[0-9a-f:]+\])|(\d{1,3}(\.\d{1,3}){3})|[a-z0-9\-\.]+)(:\d+)?$/i', $_SERVER['HTTP_HOST'])) ? sprintf('%s://%s%s',CURRENT_PROTOCOL,$_SERVER['SERVER_NAME'] . ($_SERVER['SERVER_PORT'] == 80 ? '' : ':'.$_SERVER['SERVER_PORT']), substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], basename($_SERVER['SCRIPT_FILENAME'])))) : 'http://localhost/') );
  
  // Load the basic function
  if( $d_C0r = ( ( defined('D_CORE') ) ? ( file_exists($d_C0r3 = D_CORE.'FUNC_'.DS.'BASIC__.php') ? $d_C0r3 : false ) : ( (defined('D_BASE')) ? ( file_exists($d_C0r3 = D_BASE.'CORE_'.DS.'FUNC_'.DS.'BASIC__.php') ? $d_C0r3 : false ) :false) ) ) require_once $d_C0r;
