@@ -1,3 +1,0 @@
-<?php 
-// Index Of Directory
-?>
